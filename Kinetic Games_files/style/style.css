@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+html 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 39, 39);
+    font-family: 'Cutive Mono', monospace;
+    color: #ffff;
+    font-weight: 300;
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+}
+
+p{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+}
+
+#headerTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+}
+
+.logo{
+    width: 300px;
+    padding: 0 200px;
+    align-content: center;
+}
+
+.links{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.links:visited{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.socials{
+    padding-right: 20px;
+}
+
+.Banner{
+    background-repeat: no-repeat;
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    height: 700px;
+    margin-top: 1px;
+    margin-bottom: 1px;  
+}
+
+.halfcolumn_R{
+    width: 30%;
+    padding-left: 60%;
+    padding-bottom: 10%;
+}
+
+.halfcolumn_L{
+    width: 30%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.embedVideo{
+    width: 960;
+    height: 540;
+    padding-left: 6%;
+}
+
+#Banner1{
+    background-image:url(../imgs/banners/image1_desktop_200px.jpg);
+    background-position: 450px;
+}
+#Banner2{
+    background-image:url(../imgs/banners/image2_desktop_200px.jpg);
+    background-position: -90px;
+}
+#Banner3{
+    background-image:url(../imgs/banners/image3_desktop_200px.jpg);
+    background-position: 600px;
+}
+#Banner4{
+    background-image:url(../imgs/banners/image4_desktop_200px.jpg);
+    background-position: -450px;
+}
+#Banner5{
+    background-image:url(../imgs/banners/image5_desktop_200px.jpg);
+    background-position: 250px;
+}
+#Banner6{
+    background-image:url(../imgs/shop/doll.png);
+    background-position: 150px;
+}
+
+section > p{
+    width: 30%;
+}
+
+.shoptext{
+    padding-bottom: 30px;
+}
+
+.shoplink{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2467be;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_container{
+    display: flex;
+    border: 5px #000000 solid;
+    width: 25%;
+    height: auto;
+    display: inline-block;
+}
+
+.gallery_img{
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.social_media{
+    width: 40px;
+}
