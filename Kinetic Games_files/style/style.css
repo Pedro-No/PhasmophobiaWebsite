@@ -4,7 +4,7 @@ html
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(39, 39, 39);
+    background-color: #272727;
     font-family: 'Cutive Mono', monospace;
     color: #ffff;
     font-weight: 300;
@@ -45,38 +45,47 @@ header{
 }
 
 .socials{
-    padding-right: 20px;
+    padding-right: 200px;
 }
 
 .Banner{
     background-repeat: no-repeat;
     background-color: black;
-    align-items: center;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
     color: #ffff;
     height: 700px;
     margin-top: 1px;
     margin-bottom: 1px;  
 }
 
+.BannerVideo{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    color: #ffff;
+    height: 540px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 .halfcolumn_R{
+    padding-top: 3em;
     width: 30%;
     padding-left: 60%;
-    padding-bottom: 10%;
 }
 
 .halfcolumn_L{
+    padding-top: 3em;
     width: 30%;
-    padding-left: 10%;
-    padding-bottom: 10%;
+    padding-left: 10.6%;
 }
 
-.embedVideo{
-    width: 960;
-    height: 540;
-    padding-left: 6%;
+.halfcolumn_abtgame{
+    width: 30%;
+    padding-left: 10%;
 }
 
 #Banner1{
@@ -85,7 +94,7 @@ header{
 }
 #Banner2{
     background-image:url(../imgs/banners/image2_desktop_200px.jpg);
-    background-position: -90px;
+    background-position: -170px;
 }
 #Banner3{
     background-image:url(../imgs/banners/image3_desktop_200px.jpg);
@@ -118,24 +127,123 @@ section > p{
     color: #2467be;
 }
 
-.gallery{
-    display: flex;
-    flex-direction: column;
+.carousel-wrapper{
+    position: relative;
+    height: 700px;
+    width: 80%;
+    display: block;
+    margin: 50px auto;
+    border: 2px solid #000000;
 }
 
-.img_container{
-    display: flex;
-    border: 5px #000000 solid;
-    width: 25%;
-    height: auto;
+.carousel-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    border: solid #ffff;
+    border-width: 0 3px 3px 0;
     display: inline-block;
+    padding: 12px;
 }
 
-.gallery_img{
-    max-height: 50%;
-    max-width: 50%;
+.arrow-prev{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next{
+    position: relative;
+    top: 50%;
+    left: 95%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.image-1{
+    opacity: 1;
+    background-image: url(../imgs/gallery/gallery_1.png);
+    background-size: cover;
+}
+.image-2{
+    background-image: url(../imgs/gallery/gallery_2.png);
+    background-size: cover;
+}
+.image-3{
+    background-image: url(../imgs/gallery/gallery_3.png);
+    background-size: cover;
+}
+.image-4{
+    background-image: url(../imgs/gallery/gallery_4.png);
+    background-size: cover;
+}
+.image-5{
+    background-image: url(../imgs/gallery/gallery_5.png);
+    background-size: cover;
+}
+.image-6{
+    background-image: url(../imgs/gallery/gallery_6.png);
+    background-size: cover;
+}
+.image-7{
+    background-image: url(../imgs/gallery/gallery_7.png);
+    background-size: cover;
+}
+.image-8{
+    background-image: url(../imgs/gallery/gallery_8.png);
+    background-size: cover;
 }
 
 .social_media{
     width: 40px;
+}
+
+h3{
+    margin-top: 0;
+}
+
+#footerTop{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #00000093;
+}
+
+#socialBot{
+    width: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_links{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+
+.footerBot{
+    background-color: #000000;
+    margin: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#footerLinks{
+    color: #5e5e5e;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 75px;
+    padding-left: 38px;
 }
