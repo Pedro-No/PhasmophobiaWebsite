@@ -18,6 +18,7 @@
       type="image/png"
       href="https://kineticgames.co.uk/reasources/img/spec_fav.jpg"
     />
+    <script src="./Kinetic Games_files/scripts/carousel.js"></script>    
     <title>Kinetic Games</title>
   </head>
 
@@ -188,48 +189,12 @@
         </p>
       </div>
     </section>
-    
-    <section class="carousel-wrapper">
-      <span id="image-1"></span>
-      <span id="image-2"></span>
-      <span id="image-3"></span>
-      <span id="image-4"></span>
-      <span id="image-5"></span>
-      <span id="image-6"></span>
-      <span id="image-7"></span>
-      <span id="image-8"></span>
-      
-      <div class="carousel-image image-1">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
-      </div>
-      <div class="carousel-image image-2">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
-      </div>
-      <div class="carousel-image image-3">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
-      </div>
-      <div class="carousel-image image-4">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
-      </div>
-      <div class="carousel-image image-5">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
-      </div>
-      <div class="carousel-image image-6">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
-      </div>
-      <div class="carousel-image image-7">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
-      </div>
-      <div class="carousel-image image-8">
-        <a class="arrow-prev arrow"></a>
-        <a class="arrow-next arrow"></a>
+    <section id="carousel">
+      <div class="carousel-wrapper">     
+        <div class="carousel-image image-1">
+          <a href="javascript:carousel(1);" class="arrow-prev arrow"></a>
+          <a href="javascript:carousel(2);" class="arrow-next arrow"></a>
+        </div>
       </div>
     </section>
     <footer>
@@ -239,7 +204,7 @@
             <h3>Kinetic Games. All rights reserved©</h3>
             <p>
                 Unfortunately we are not currently hiring. For business <br> 
-                enquiries contact us at:<a class="shoplink"> contact@kineticgames.co.uk</a><br>
+                enquiries contact us at:<a class="shoplink" href="mailto:contact@kineticgames.co.uk"> contact@kineticgames.co.uk</a><br>
                 Bug reporting and suggestions are only handled through <br>
                 our Discord. To do that you can go
                 <a
@@ -288,7 +253,7 @@
         <nav>
           <ul class="footer_links">
             <li>
-              <a id="footerLinks" class="links" href="#headerTop"> Home</a>
+              <a id="footerLinks" class="links" href="#"> Home</a>
             </li>
             <li>
               <a

@@ -127,13 +127,18 @@ section > p{
     color: #2467be;
 }
 
+#carousel{
+    background-color: #000000;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+}
+
 .carousel-wrapper{
     position: relative;
-    height: 700px;
+    height: 800px;
     width: 80%;
     display: block;
-    margin: 50px auto;
-    border: 2px solid #000000;
 }
 
 .carousel-image{
@@ -143,7 +148,6 @@ section > p{
     left: 0;
     right: 0;
     padding: 25px 50px;
-    opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
@@ -168,36 +172,35 @@ section > p{
 }
 
 .image-1{
-    opacity: 1;
-    background-image: url(../imgs/gallery/gallery_1.png);
+    background-image: url(../imgs/gallery/gallery_1.jpg);
     background-size: cover;
 }
 .image-2{
-    background-image: url(../imgs/gallery/gallery_2.png);
+    background-image: url(../imgs/gallery/gallery_2.jpg);
     background-size: cover;
 }
 .image-3{
-    background-image: url(../imgs/gallery/gallery_3.png);
+    background-image: url(../imgs/gallery/gallery_3.jpg);
     background-size: cover;
 }
 .image-4{
-    background-image: url(../imgs/gallery/gallery_4.png);
+    background-image: url(../imgs/gallery/gallery_4.jpg);
     background-size: cover;
 }
 .image-5{
-    background-image: url(../imgs/gallery/gallery_5.png);
+    background-image: url(../imgs/gallery/gallery_5.jpg);
     background-size: cover;
 }
 .image-6{
-    background-image: url(../imgs/gallery/gallery_6.png);
+    background-image: url(../imgs/gallery/gallery_6.jpg);
     background-size: cover;
 }
 .image-7{
-    background-image: url(../imgs/gallery/gallery_7.png);
+    background-image: url(../imgs/gallery/gallery_7.jpg);
     background-size: cover;
 }
 .image-8{
-    background-image: url(../imgs/gallery/gallery_8.png);
+    background-image: url(../imgs/gallery/gallery_8.jpg);
     background-size: cover;
 }
 
